@@ -1,0 +1,90 @@
+$green:#27AD60;
+$white:#FEFEFE;
+$gray-dark:#433D43;
+$gray-hr:#ACAAAC;
+
+
+*{
+	text-decoration: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+h1{
+	font-size:60px;
+}
+h3{
+	font-size:29px;
+}
+h1,h3{
+	line-height:1.5;
+	font-weight:300;
+}
+
+
+header{
+	.navbar-default {
+		background-color: $green;
+		border:none;
+		padding:20px 0 30px;
+		margin-bottom: 0;
+		.navbar-nav>li>a{
+			color:$white;
+		}
+		.navbar-toggle{
+			background-color:$white;
+			&:hover , &:focus{
+				background-color:$white;
+			}
+		}
+	}
+	
+}
+aside{
+	background:url("../img/carousel-bg.jpg") no-repeat;
+	background-size:104.5%;
+	background-position: 20% 42%;
+	color:$white;
+	padding:20px 0;
+	h1{
+		margin:0
+	}
+	h3{
+		margin:70px 5px 10px;
+	}
+}
+hr{
+	width: 220px;
+	height: 2px;
+	background-color:$gray-hr;
+	margin:0 auto;
+}
+.container-fluid{
+	width: 82%;
+	.row{
+		margin:0;
+		.col-md-2{
+			width: 	18%;
+			height: 150px;	
+		}	
+	}
+	.pallet1 div{
+		&:nth-child(2){
+			background-color:#69D2E7;
+		}
+		&:nth-child(3){
+			background-color:#A7DBDB;
+		}
+		&:nth-child(4){
+			background-color:#E0E4CC;
+		}		
+		&:nth-child(5){
+			background-color:#F38630;
+		}	
+		&:nth-child(6){
+			background-color:#FA6900;
+		}
+
+	}
+}
+

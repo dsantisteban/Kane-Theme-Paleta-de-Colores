@@ -1,28 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Escoge tu paleta de colores!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ThreeSixty Bootstrap Template">
     <meta name="author" content="Fabian Bentz Webdesign">
-
     
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,400italic,700' rel='stylesheet' type='text/css'>
-    
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/main.scss" rel="stylesheet">
+    
 
-  </head>
+</head>
 
 <body>
+    <header>
 
-<!-- Escribe tu código HTML aquí -->
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- El logotipo y el icono que despliega el menú se agrupan
+            para mostrarlos mejor en los dispositivos móviles -->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="img/logo.png" alt="">
+            </div>
+                <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+                otro elemento que se pueda ocultar al minimizar la barra -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="#">About</a></li>
+                        <li class="dropdown"><a href="#">Service</a></li>
+                        <li class="dropdown"><a href="#">Team</a></li>
+                        <li class="dropdown"><a href="#">Price</a></li>
+                        <li class="dropdown"><a href="#">Clients</a></li>
+                        <li class="dropdown"><a href="#">Facts</a></li>
+                        <li class="dropdown"><a href="#">Contact</a></li>
 
-<!-- BOOTSTRAP JAVASCRIPT -->
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <div class="container text-center">
+            <h1>BEAUTIFUL COLOR PALETTES FOR YOUR NEXT WEB PROJECT</h1>
+            <h3>Choosing the right color scheme is essential to your website's success. Your layout and other design choices - including font- Should be developed in concert whith your color scheme to ensure readability, cohesiveness and beauty in the final product.</h3>
+        </div>
+    </aside>
+    <section id="palette" class="text-center">
+        <div class="container-fluid">
+            <h1>PICK YOUR COLOR PALETTE</h1>
+            <hr>
+            <div class="row pallet1">
+
+              
+                <div class="col-md-1">  
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <p>#69D2E7</p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <p>#A7DBDB</p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <p>#E0E4CC</p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <p>#F38630</p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <p>#FA6900</p>
+                </div>
+                 
+
+             </div>
+            <div class="row pallet2">
+                <div class="col-md-1">  
+                </div>
+                <div class="col-md-2">
+                    <p>#69D2E7</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#A7DBDB</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#E0E4CC</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#F38630</p>
+                </div>
+                <div class="col-md-2 ">
+                    <p>#FA6900</p>
+                </div>
+            </div>
+            <div class="row pallet3">
+                <div class="col-md-1">  
+                </div>
+                <div class="col-md-2">
+                    <p>#69D2E7</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#A7DBDB</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#E0E4CC</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#F38630</p>
+                </div>
+                <div class="col-md-2 ">
+                    <p>#FA6900</p>
+                </div>
+            </div>
+            <div class="row pallet4">
+                <div class="col-md-1">  
+                </div>
+                <div class="col-md-2">
+                    <p>#69D2E7</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#A7DBDB</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#E0E4CC</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#F38630</p>
+                </div>
+                <div class="col-md-2 ">
+                    <p>#FA6900</p>
+                </div>
+            </div>
+            <div class="row pallet5">
+                <div class="col-md-1">  
+                </div>
+                <div class="col-md-2">
+                    <p>#69D2E7</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#A7DBDB</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#E0E4CC</p>
+                </div>
+                <div class="col-md-2">
+                    <p>#F38630</p>
+                </div>
+                <div class="col-md-2 ">
+                    <p>#FA6900</p>
+                </div>
+            </div>                     
+        </div>
+        
+    </section>
+    <section class="about-us">
+    <div class="container"> 
+        <div class="row">   
+                <h1>ABOUT US</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+               <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p> 
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+
+    </div>
+    
+
+    </section>
+    <!-- Escribe tu código HTML aquí -->
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
 </body>
 </html>
