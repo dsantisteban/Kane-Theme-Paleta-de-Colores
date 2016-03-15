@@ -8,23 +8,32 @@ h1 {
   font-size: 60px; }
 
 h3 {
-  font-size: 29px; }
+  font-size: 28px; }
 
 h1, h3 {
   line-height: 1.5;
   font-weight: 300; }
 
+.pdb-10 {
+  padding-bottom: 10px; }
+
+.mgb-50 {
+  margin-bottom: 50px; }
+
+.mgb-20 {
+  margin-bottom: 20px; }
+
 header .navbar-default {
-  background-color: #27AD60;
+  background: #27AD60;
   border: none;
   padding: 20px 0 30px;
   margin-bottom: 0; }
   header .navbar-default .navbar-nav > li > a {
     color: #FEFEFE; }
   header .navbar-default .navbar-toggle {
-    background-color: #FEFEFE; }
+    background: #FEFEFE; }
     header .navbar-default .navbar-toggle:hover, header .navbar-default .navbar-toggle:focus {
-      background-color: #FEFEFE; }
+      background: #FEFEFE; }
 
 aside {
   background: url("../img/carousel-bg.jpg") no-repeat;
@@ -39,26 +48,153 @@ aside {
 
 hr {
   width: 220px;
-  height: 2px;
+  height: 1px;
   background-color: #ACAAAC;
   margin: 0 auto; }
 
-.container-fluid {
+#palette .container-fluid {
   width: 82%; }
-  .container-fluid .row {
+  #palette .container-fluid .row {
     margin: 0; }
-    .container-fluid .row .col-md-2 {
+    #palette .container-fluid .row .col-md-2 {
       width: 18%;
       height: 150px; }
-  .container-fluid .pallet1 div:nth-child(2) {
-    background-color: #69D2E7; }
-  .container-fluid .pallet1 div:nth-child(3) {
-    background-color: #A7DBDB; }
-  .container-fluid .pallet1 div:nth-child(4) {
-    background-color: #E0E4CC; }
-  .container-fluid .pallet1 div:nth-child(5) {
-    background-color: #F38630; }
-  .container-fluid .pallet1 div:nth-child(6) {
-    background-color: #FA6900; }
+  #palette .container-fluid .pallet1 div:nth-child(2) {
+    background: #69D2E7; }
+  #palette .container-fluid .pallet1 div:nth-child(3) {
+    background: #A7DBDB; }
+  #palette .container-fluid .pallet1 div:nth-child(4) {
+    background: #E0E4CC; }
+  #palette .container-fluid .pallet1 div:nth-child(5) {
+    background: #F38630; }
+  #palette .container-fluid .pallet1 div:nth-child(6) {
+    background: #FA6900; }
+  #palette .container-fluid .pallet2 div:nth-child(2) {
+    background: #E94C6F; }
+  #palette .container-fluid .pallet2 div:nth-child(3) {
+    background: #542733; }
+  #palette .container-fluid .pallet2 div:nth-child(4) {
+    background: #5A6A62; }
+  #palette .container-fluid .pallet2 div:nth-child(5) {
+    background: #C6D5CD; }
+  #palette .container-fluid .pallet2 div:nth-child(6) {
+    background: #FDF200; }
+  #palette .container-fluid .pallet3 div:nth-child(2) {
+    background: #DB3340; }
+  #palette .container-fluid .pallet3 div:nth-child(3) {
+    background: #E8B71A; }
+  #palette .container-fluid .pallet3 div:nth-child(4) {
+    background: #F7EAC8; }
+  #palette .container-fluid .pallet3 div:nth-child(5) {
+    background: #1FDA9A; }
+  #palette .container-fluid .pallet3 div:nth-child(6) {
+    background: #28ABE3; }
+  #palette .container-fluid .pallet4 div:nth-child(2) {
+    background: #588C73; }
+  #palette .container-fluid .pallet4 div:nth-child(3) {
+    background: #F2E394; }
+  #palette .container-fluid .pallet4 div:nth-child(4) {
+    background: #F2AE72; }
+  #palette .container-fluid .pallet4 div:nth-child(5) {
+    background: #D96459; }
+  #palette .container-fluid .pallet4 div:nth-child(6) {
+    background: #8C4646; }
+  #palette .container-fluid .pallet5 div:nth-child(2) {
+    background: #D0C91F; }
+  #palette .container-fluid .pallet5 div:nth-child(3) {
+    background: #85C4B9; }
+  #palette .container-fluid .pallet5 div:nth-child(4) {
+    background: #008BBA; }
+  #palette .container-fluid .pallet5 div:nth-child(5) {
+    background: #DF514C; }
+  #palette .container-fluid .pallet5 div:nth-child(6) {
+    background: #DC403B; }
+
+#about-us {
+  background: #2C3E50;
+  color: #FEFEFE;
+  font-weight: 300; }
+  #about-us .container {
+    padding: 100px 100px; }
+    #about-us .container .text-progress .col-md-6:nth-child(1) {
+      padding-right: 40px; }
+    #about-us .container .text-progress p:nth-child(2) {
+      margin-bottom: 100px; }
+    #about-us .container .text-progress .progress {
+      height: 12px;
+      border-radius: 0;
+      border: 2px solid #f5f5f5;
+      margin-bottom: 5px; }
+      #about-us .container .text-progress .progress .progress-bar-success {
+        background: #E67E22; }
+
+#services {
+  background: #27AD60;
+  color: #FEFEFE; }
+  #services .btn-bk {
+    background: #473D3F;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px; }
+  #services .row {
+    margin-top: 100px; }
+  #services .bg-icons, #services .col-md-4 .bg-service .bg-orange {
+    background: url("../img/icon-bg.png");
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    margin: 0 auto;
+    background-blend-mode: color;
+    background-color: rgba(44, 62, 80, 0.5); }
+    #services .bg-icons img, #services .col-md-4 .bg-service .bg-orange img {
+      padding: 25px; }
+  #services .col-md-4 {
+    padding: 0px 65px 0; }
+    #services .col-md-4 h3 {
+      margin-bottom: 40px; }
+    #services .col-md-4 .bg-service {
+      background-blend-mode: color;
+      background-color: rgba(44, 62, 80, 0.5);
+      height: 450px;
+      padding-top: 31px;
+      margin-top: -31px; }
+      #services .col-md-4 .bg-service h3 {
+        color: #E67E22; }
+      #services .col-md-4 .bg-service .bg-orange {
+        background: #E67E22;
+        -ms-transform: rotate(231deg);
+        /* IE 9 */
+        -webkit-transform: rotate(231deg);
+        /* Safari */
+        transform: rotate(231deg); }
+    #services .col-md-4 p {
+      color: #B1C0A5; }
+
+#prices {
+  background: #2C3E50;
+  color: #FEFEFE; }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px; }
+
+  h3 {
+    font-size: 18px; }
+
+  aside {
+    background: url("../img/carousel-bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: 20% 42%;
+    color: #FEFEFE;
+    padding: 20px 0; }
+
+  #palette .container-fluid {
+    width: 100%; }
+    #palette .container-fluid .row {
+      margin: 0; }
+      #palette .container-fluid .row .col-md-2 {
+        width: 20%;
+        height: 100px;
+        padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
