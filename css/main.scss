@@ -40,6 +40,9 @@ h4{
 .mgb-15{
 	margin-bottom:15px;
 }
+.pdt-80{
+	padding-top:80px;
+}
 .pdt-120{
 	padding-top:120px;
 }
@@ -242,9 +245,6 @@ hr{
 		padding:15px 20px;
 		font-size:20px;
 	}
-	.row{
-		margin-top: 100px;
-	}
 	.col-md-4{
 		padding:0px 65px 0;
 		hr{
@@ -282,13 +282,34 @@ hr{
 					-webkit-transform: rotate(231deg); /* Safari */
 					transform: rotate(231deg);
 				}
-
 			}
 		}
 		p{
 			color:$gray-light;
 		}
 	}
+}
+#team{
+	@extend #services;
+	.col-md-3{
+		padding: 0 40px;
+		img{
+			width:150px;
+			height:150px;
+		}
+		h6{
+			color:$gray-dark;
+		}
+		i{
+			font-size: 25px;
+			padding-top:20px;
+			padding-right:8px;		
+		}
+		p, i{
+			color:$gray-light;
+		}
+	}
+
 }
 .btn-opa{
 	padding:15px 20px;

@@ -24,6 +24,9 @@ h4 {
 .mgb-15 {
   margin-bottom: 15px; }
 
+.pdt-80 {
+  padding-top: 80px; }
+
 .pdt-120 {
   padding-top: 120px; }
 
@@ -157,23 +160,21 @@ hr {
       #about-us .container .text-progress .progress .progress-bar-success {
         background: #E67E22; }
 
-#services, footer {
+#services, #team, footer {
   background: #27AD60;
   color: #FEFEFE; }
-  #services h1, footer h1 {
+  #services h1, #team h1, footer h1 {
     margin-top: 0; }
-  #services .btn-bk, footer .btn-bk {
+  #services .btn-bk, #team .btn-bk, footer .btn-bk {
     background: #473D3F;
     color: white;
     padding: 15px 20px;
     font-size: 20px; }
-  #services .row, footer .row {
-    margin-top: 100px; }
-  #services .col-md-4, footer .col-md-4 {
+  #services .col-md-4, #team .col-md-4, footer .col-md-4 {
     padding: 0px 65px 0; }
-    #services .col-md-4 hr, footer .col-md-4 hr {
+    #services .col-md-4 hr, #team .col-md-4 hr, footer .col-md-4 hr {
       display: none; }
-    #services .col-md-4 .bg-service .bg-icons, footer .col-md-4 .bg-service .bg-icons, #services .col-md-4 .bg-service:hover .bg-orange, footer .col-md-4 .bg-service:hover .bg-orange, #services .col-md-4 .bg-service:focus .bg-orange, footer .col-md-4 .bg-service:focus .bg-orange {
+    #services .col-md-4 .bg-service .bg-icons, #team .col-md-4 .bg-service .bg-icons, footer .col-md-4 .bg-service .bg-icons, #services .col-md-4 .bg-service:hover .bg-orange, #team .col-md-4 .bg-service:hover .bg-orange, footer .col-md-4 .bg-service:hover .bg-orange, #services .col-md-4 .bg-service:focus .bg-orange, #team .col-md-4 .bg-service:focus .bg-orange, footer .col-md-4 .bg-service:focus .bg-orange {
       background: url("../img/icon-bg.png");
       height: 150px;
       width: 150px;
@@ -181,27 +182,41 @@ hr {
       margin: 0 auto;
       background-blend-mode: color;
       background-color: rgba(44, 62, 80, 0.5); }
-      #services .col-md-4 .bg-service .bg-icons img, footer .col-md-4 .bg-service .bg-icons img, #services .col-md-4 .bg-service:hover .bg-orange img, footer .col-md-4 .bg-service:hover .bg-orange img, #services .col-md-4 .bg-service:focus .bg-orange img, footer .col-md-4 .bg-service:focus .bg-orange img {
+      #services .col-md-4 .bg-service .bg-icons img, #team .col-md-4 .bg-service .bg-icons img, footer .col-md-4 .bg-service .bg-icons img, #services .col-md-4 .bg-service:hover .bg-orange img, #team .col-md-4 .bg-service:hover .bg-orange img, footer .col-md-4 .bg-service:hover .bg-orange img, #services .col-md-4 .bg-service:focus .bg-orange img, #team .col-md-4 .bg-service:focus .bg-orange img, footer .col-md-4 .bg-service:focus .bg-orange img {
         padding: 25px; }
-    #services .col-md-4 .bg-service:hover, footer .col-md-4 .bg-service:hover, #services .col-md-4 .bg-service:focus, footer .col-md-4 .bg-service:focus {
+    #services .col-md-4 .bg-service:hover, #team .col-md-4 .bg-service:hover, footer .col-md-4 .bg-service:hover, #services .col-md-4 .bg-service:focus, #team .col-md-4 .bg-service:focus, footer .col-md-4 .bg-service:focus {
       background-blend-mode: color;
       background-color: rgba(44, 62, 80, 0.5);
       height: 450px;
       padding-top: 31px;
       margin-top: -31px; }
-      #services .col-md-4 .bg-service:hover h3, footer .col-md-4 .bg-service:hover h3, #services .col-md-4 .bg-service:focus h3, footer .col-md-4 .bg-service:focus h3 {
+      #services .col-md-4 .bg-service:hover h3, #team .col-md-4 .bg-service:hover h3, footer .col-md-4 .bg-service:hover h3, #services .col-md-4 .bg-service:focus h3, #team .col-md-4 .bg-service:focus h3, footer .col-md-4 .bg-service:focus h3 {
         color: #E67E22; }
-      #services .col-md-4 .bg-service:hover hr, footer .col-md-4 .bg-service:hover hr, #services .col-md-4 .bg-service:focus hr, footer .col-md-4 .bg-service:focus hr {
+      #services .col-md-4 .bg-service:hover hr, #team .col-md-4 .bg-service:hover hr, footer .col-md-4 .bg-service:hover hr, #services .col-md-4 .bg-service:focus hr, #team .col-md-4 .bg-service:focus hr, footer .col-md-4 .bg-service:focus hr {
         display: block; }
-      #services .col-md-4 .bg-service:hover .bg-orange, footer .col-md-4 .bg-service:hover .bg-orange, #services .col-md-4 .bg-service:focus .bg-orange, footer .col-md-4 .bg-service:focus .bg-orange {
+      #services .col-md-4 .bg-service:hover .bg-orange, #team .col-md-4 .bg-service:hover .bg-orange, footer .col-md-4 .bg-service:hover .bg-orange, #services .col-md-4 .bg-service:focus .bg-orange, #team .col-md-4 .bg-service:focus .bg-orange, footer .col-md-4 .bg-service:focus .bg-orange {
         background: #E67E22;
         -ms-transform: rotate(231deg);
         /* IE 9 */
         -webkit-transform: rotate(231deg);
         /* Safari */
         transform: rotate(231deg); }
-    #services .col-md-4 p, footer .col-md-4 p {
+    #services .col-md-4 p, #team .col-md-4 p, footer .col-md-4 p {
       color: #B0B2B4; }
+
+#team .col-md-3 {
+  padding: 0 40px; }
+  #team .col-md-3 img {
+    width: 150px;
+    height: 150px; }
+  #team .col-md-3 h6 {
+    color: #433D43; }
+  #team .col-md-3 i {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-right: 8px; }
+  #team .col-md-3 p, #team .col-md-3 i {
+    color: #B0B2B4; }
 
 .btn-opa {
   padding: 15px 20px;
