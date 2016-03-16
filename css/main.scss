@@ -73,6 +73,9 @@ h4{
 header{
 	.navbar-default {
 		@include bg ($green);
+		position:fixed;
+		z-index: 1;
+		width: 100%;
 		border:none;
 		padding:20px 0 30px;
 		margin-bottom: 0;
