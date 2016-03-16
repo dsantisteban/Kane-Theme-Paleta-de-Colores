@@ -169,29 +169,29 @@ hr {
     font-size: 20px; }
   #services .row, footer .row {
     margin-top: 100px; }
-  #services .bg-icons, footer .bg-icons, #services .col-md-4 .bg-service .bg-orange, footer .col-md-4 .bg-service #services .bg-orange, footer .col-md-4 .bg-service .bg-orange {
-    background: url("../img/icon-bg.png");
-    height: 150px;
-    width: 150px;
-    background-size: cover;
-    margin: 0 auto;
-    background-blend-mode: color;
-    background-color: rgba(44, 62, 80, 0.5); }
-    #services .bg-icons img, footer .bg-icons img, #services .col-md-4 .bg-service .bg-orange img, footer .col-md-4 .bg-service #services .bg-orange img, footer .col-md-4 .bg-service .bg-orange img {
-      padding: 25px; }
   #services .col-md-4, footer .col-md-4 {
     padding: 0px 65px 0; }
     #services .col-md-4 h3, footer .col-md-4 h3 {
       margin-bottom: 40px; }
-    #services .col-md-4 .bg-service, footer .col-md-4 .bg-service {
+    #services .col-md-4 .bg-service .bg-icons, footer .col-md-4 .bg-service .bg-icons, #services .col-md-4 .bg-service:hover .bg-orange, footer .col-md-4 .bg-service:hover .bg-orange, #services .col-md-4 .bg-service:focus .bg-orange, footer .col-md-4 .bg-service:focus .bg-orange {
+      background: url("../img/icon-bg.png");
+      height: 150px;
+      width: 150px;
+      background-size: cover;
+      margin: 0 auto;
+      background-blend-mode: color;
+      background-color: rgba(44, 62, 80, 0.5); }
+      #services .col-md-4 .bg-service .bg-icons img, footer .col-md-4 .bg-service .bg-icons img, #services .col-md-4 .bg-service:hover .bg-orange img, footer .col-md-4 .bg-service:hover .bg-orange img, #services .col-md-4 .bg-service:focus .bg-orange img, footer .col-md-4 .bg-service:focus .bg-orange img {
+        padding: 25px; }
+    #services .col-md-4 .bg-service:hover, footer .col-md-4 .bg-service:hover, #services .col-md-4 .bg-service:focus, footer .col-md-4 .bg-service:focus {
       background-blend-mode: color;
       background-color: rgba(44, 62, 80, 0.5);
       height: 450px;
       padding-top: 31px;
       margin-top: -31px; }
-      #services .col-md-4 .bg-service h3, footer .col-md-4 .bg-service h3 {
+      #services .col-md-4 .bg-service:hover h3, footer .col-md-4 .bg-service:hover h3, #services .col-md-4 .bg-service:focus h3, footer .col-md-4 .bg-service:focus h3 {
         color: #E67E22; }
-      #services .col-md-4 .bg-service .bg-orange, footer .col-md-4 .bg-service .bg-orange {
+      #services .col-md-4 .bg-service:hover .bg-orange, footer .col-md-4 .bg-service:hover .bg-orange, #services .col-md-4 .bg-service:focus .bg-orange, footer .col-md-4 .bg-service:focus .bg-orange {
         background: #E67E22;
         -ms-transform: rotate(231deg);
         /* IE 9 */

@@ -245,38 +245,41 @@ hr{
 	.row{
 		margin-top: 100px;
 	}
-	.bg-icons{
-		@include bg (url("../img/icon-bg.png"));
-		height:150px;
-		width: 150px;
-		background-size:cover;
-		margin:0 auto;
-		background-blend-mode:color;
-		background-color: rgba(44, 62, 80,0.5);
-		img{
-			padding:25px;
-		}
-	}
 	.col-md-4{
 		padding:0px 65px 0;
 		h3{
 			margin-bottom: 40px;
 		}
 		.bg-service{
-			background-blend-mode:color;
-			background-color: rgba(44, 62, 80,0.5);
-			height: 450px;
-			padding-top: 31px;
-			margin-top: -31px;
-			h3{
-				color:$orange;
+			.bg-icons{
+				@include bg (url("../img/icon-bg.png"));
+				height:150px;
+				width: 150px;
+				background-size:cover;
+				margin:0 auto;
+				background-blend-mode:color;
+				background-color: rgba(44, 62, 80,0.5);
+				img{
+					padding:25px;
+				}
 			}
-			.bg-orange{
-				@extend .bg-icons;
-				@include bg ($orange);
-				-ms-transform: rotate(231deg); /* IE 9 */
-				-webkit-transform: rotate(231deg); /* Safari */
-				transform: rotate(231deg);
+			&:hover , &:focus{
+				background-blend-mode:color;
+				background-color: rgba(44, 62, 80,0.5);
+				height: 450px;
+				padding-top: 31px;
+				margin-top: -31px;
+				h3{
+					color:$orange;
+				}
+				.bg-orange{
+					@extend .bg-icons;
+					@include bg ($orange);
+					-ms-transform: rotate(231deg); /* IE 9 */
+					-webkit-transform: rotate(231deg); /* Safari */
+					transform: rotate(231deg);
+				}
+
 			}
 		}
 		p{
