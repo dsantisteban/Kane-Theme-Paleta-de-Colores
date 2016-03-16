@@ -218,6 +218,9 @@ hr {
   #prices table, #clients table, #contact table {
     margin: 0 auto;
     border: 1px solid #27AD60; }
+    #prices table:hover, #clients table:hover, #contact table:hover, #prices table:focus, #clients table:focus, #contact table:focus {
+      margin-top: -30px;
+      border: 2px solid #E67E22; }
     #prices table tr:nth-child(2), #clients table tr:nth-child(2), #contact table tr:nth-child(2) {
       background: #27AD60; }
       #prices table tr:nth-child(2) td, #clients table tr:nth-child(2) td, #contact table tr:nth-child(2) td {

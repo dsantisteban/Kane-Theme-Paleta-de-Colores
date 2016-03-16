@@ -302,9 +302,13 @@ hr{
 			}
 		}
 	}
-	table{		
+	table{
 		margin:0 auto;
 		border:1px solid $green;
+		&:hover, &:focus{
+			margin-top: -30px;
+			border: 2px solid $orange;
+		}				
 		tr{
 			&:nth-child(2){
 				@include bg ($green);
@@ -370,17 +374,17 @@ hr{
 
 
 #red-social{
-    background-image: url("../img/img-divider-img.jpg");
-    background-position: 0 -20%;
-    background-repeat: repeat-y;
-    background-size: 100% 200%;
-    padding:200px 0 150px;
-    i.fa{
-    	color: $white;
-    	font-size: 120px;
-    	padding-right: 20px;
+	background-image: url("../img/img-divider-img.jpg");
+	background-position: 0 -20%;
+	background-repeat: repeat-y;
+	background-size: 100% 200%;
+	padding:200px 0 150px;
+	i.fa{
+		color: $white;
+		font-size: 120px;
+		padding-right: 20px;
 
-    }
+	}
 
 }
 footer{
