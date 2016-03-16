@@ -2,9 +2,10 @@ $green:#27AD60;
 $white:#FEFEFE;
 $gray-dark:#433D43;
 $gray:#ACAAAC;
-$gray-light:#B1C0A5;
+$gray-light:#B0B2B4;
 $blue-dark:#2C3E50;
 $orange:#E67E22;
+$orange-opa:rgba(220, 64, 59, 0.2);
 $black-light:#473D3F;
 @mixin bg($color){
 	background:$color;
@@ -19,6 +20,9 @@ $black-light:#473D3F;
 	margin: 0;
 	padding: 0;	
 }
+.mg-0auto li{
+	margin-left:40px;
+}
 h1{
 	font-size:60px;
 }
@@ -29,14 +33,39 @@ h1,h3{
 	line-height:1.5;
 	font-weight:300;
 }
+h4{
+	font-size:21px;
+	font-weight:300;
+}
+.mgb-15{
+	margin-bottom:15px;
+}
+.pdt-120{
+	padding-top:120px;
+}
+.pdb-300{
+	padding-bottom: 300px;
+}
+.pdb-120{
+	padding-bottom:120px;
+}
 .pdb-10{
 	padding-bottom:10px;
+}
+.mgt-20{
+	margin-top: 20px	
 }
 .mgb-50{
 	margin-bottom:50px;
 }
 .mgb-20{
 	margin-bottom:20px;
+}
+.mgt-100{
+	margin-top:100px;
+}
+.mgb-300{
+	margin-bottom:300px;
 }
 header{
 	.navbar-default {
@@ -177,6 +206,7 @@ hr{
 	@include bg ($blue-dark);
 	color:$white;
 	font-weight: 300;
+	box-shadow:2px 0px 15px rgba(0,0,0,.9);
 	.container{
 		padding:100px 100px;
 		.text-progress{
@@ -203,6 +233,9 @@ hr{
 #services{
 	@include bg ($green);
 	color:$white;
+	h1{
+		margin-top: 0;
+	}
 	.btn-bk{
 		@include bg ($black-light);
 		color:white;
@@ -220,9 +253,9 @@ hr{
 		margin:0 auto;
 		background-blend-mode:color;
 		background-color: rgba(44, 62, 80,0.5);
-		 img{
-		 	padding:25px;
-		 }
+		img{
+			padding:25px;
+		}
 	}
 	.col-md-4{
 		padding:0px 65px 0;
@@ -230,32 +263,186 @@ hr{
 			margin-bottom: 40px;
 		}
 		.bg-service{
-		 background-blend-mode:color;
-		 background-color: rgba(44, 62, 80,0.5);
-		 height: 450px;
-		 padding-top: 31px;
-		 margin-top: -31px;
-		 h3{
-		 	color:$orange;
-		 }
-		 .bg-orange{
+			background-blend-mode:color;
+			background-color: rgba(44, 62, 80,0.5);
+			height: 450px;
+			padding-top: 31px;
+			margin-top: -31px;
+			h3{
+				color:$orange;
+			}
+			.bg-orange{
 				@extend .bg-icons;
 				@include bg ($orange);
-    			-ms-transform: rotate(231deg); /* IE 9 */
-    			-webkit-transform: rotate(231deg); /* Safari */
-    			transform: rotate(231deg);
-		 }
+				-ms-transform: rotate(231deg); /* IE 9 */
+				-webkit-transform: rotate(231deg); /* Safari */
+				transform: rotate(231deg);
+			}
 		}
 		p{
 			color:$gray-light;
 		}
 	}
 }
+.btn-opa{
+	padding:15px 20px;
+	@include bg ($orange-opa);
+	color:white;		
+	font-size:18px;
+	font-weight: 300;
+}
 #prices{
 	@include bg ($blue-dark);
 	color:$white;
+	.col-md-3:nth-child(1) table {
+		tr:nth-child(2n+1){
+			background-color:rgba(230, 126, 34,0.5);
+			&:last-child{
+				@include bg ($blue-dark);
+			}
+		}
+	}
+	table{		
+		margin:0 auto;
+		border:1px solid $green;
+		tr{
+			&:nth-child(2){
+				@include bg ($green);
+				td{
+					padding:20px 0;
+					span:nth-child(1){
+						font-size: 50px;		
+					}	
+				}					
+			}
+			&:nth-child(n+3) td{
+				padding:10px 0px;
+			}			
+			&:nth-child(2n+4){
+				@include bg ($white);
+				color: $blue-dark;
+			}
+			&:last-child td{
+				padding: 70px 0 40px;
+			}			
+
+			th{
+				text-align:center;
+				padding:10px 0px;
+				h4{
+					color:$gray-light;
+				}
+			}
+			td{
+				width:350px;
+			}
+		}
+	}
+}
+#clients{
+	@extend #prices;
+	.texto {
+		width: 60%;
+		margin: 0 auto;
+		h4{
+			color:$gray-light;
+		}
+		p{
+			color:$orange;
+			font-size: 20px;
+		}
+	}
 
 }
+#contact{
+	@extend #prices;
+
+	.form-control{
+		height: 50px;
+		border-radius:0px;
+		margin:0 auto;
+		width: 70%;
+	}
+	textarea.form-control {
+		height: auto;
+	}
+}
+
+
+#red-social{
+    background-image: url("../img/img-divider-img.jpg");
+    background-position: 0 -20%;
+    background-repeat: repeat-y;
+    background-size: 100% 200%;
+    padding:200px 0 150px;
+    i.fa{
+    	color: $white;
+    	font-size: 120px;
+    	padding-right: 20px;
+
+    }
+
+}
+footer{
+	@extend #services;
+	.row{
+		margin-top:20px;
+	}
+	hr{
+		width: 73px;
+	}
+	ul{
+		margin-left: 20px;
+		li {
+			color:$white;
+			letter-spacing: 1.5px;
+			margin:15px 0;
+			i{
+				margin-right: 5px;
+			}
+		}
+	}
+	.input-group-lg{
+		border:1px solid $gray-dark;
+	}
+
+	.input-group-lg>.form-control{
+		border-radius:0;
+		height: 30px;
+		font-size: 14px;
+
+	}
+	.input-group-lg>.input-group-addon{
+		border-radius:0;
+		padding:2px 15px;
+		height: 30px;
+		@include bg ($gray-dark);
+		border:0;
+		color:$orange;
+	}
+	.now{
+		padding:10px;
+		margin-top: 20px;
+		border:0;
+		@include bg ($gray-dark);
+	}
+	.font div{
+		&:first-child{
+			a{
+				color:$gray-dark;
+			}
+		}
+		&:last-child{
+			a{
+				color:$white;
+			}
+		}		
+
+	}
+
+}
+
+
 
 @media screen and (max-width:600px){
 	h1{
