@@ -247,8 +247,8 @@ hr{
 	}
 	.col-md-4{
 		padding:0px 65px 0;
-		h3{
-			margin-bottom: 40px;
+		hr{
+			display: none;
 		}
 		.bg-service{
 			.bg-icons{
@@ -271,6 +271,9 @@ hr{
 				margin-top: -31px;
 				h3{
 					color:$orange;
+				}
+				hr{
+					display: block;
 				}
 				.bg-orange{
 					@extend .bg-icons;
